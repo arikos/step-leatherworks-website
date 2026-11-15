@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Step Leatherworks Limited</title>
+<meta name="description" content="Contact Step Leatherworks Limited — stepleather@gmail.com — Seeta, Mukono, Uganda.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="%23d9a441"/><text x="32" y="43" font-size="34" font-family="Georgia" font-weight="bold" text-anchor="middle" fill="%232b1d14">S</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">S</span>
+      <span class="brand-text">STEP <b>LEATHERWORKS</b><small>LIMITED · SEETA, MUKONO</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <nav class="main-nav">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="products.html" data-i18n="nav_products">Products</a>
+        <a href="wholesale.html" data-i18n="nav_wholesale">Wholesale</a>
+        <a href="training.html" data-i18n="nav_training">Training</a>
+        <a href="capacity.html" data-i18n="nav_capacity">Capacity Building</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="contact.html" data-i18n="nav_contact" class="active">Contact</a>
+        <select id="langSel" aria-label="Language">
+          <option value="en">English</option>
+          <option value="sw">Kiswahili</option>
+          <option value="lg">Luganda</option>
+          <option value="lo">Luo (draft)</option>
+          <option value="at">Ateso (soon)</option>
+        </select>
+    </nav>
+  </div>
+</header>
+
+
+<section class="page-hero" style="background-image:url('assets/img/gents-brown-group.jpg')">
+  <div class="container">
+    <p class="kicker">Get In Touch</p>
+    <h1>Contact Us</h1>
+    <p>Whether it's a product order, a wholesale enquiry, training enrollment or a partnership —
+       we would love to hear from you.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-grid">
+    <div>
+      <div class="contact-card" style="margin-bottom:20px">
+        <h3>Email</h3>
+        <p style="margin:8px 0 14px"><a href="mailto:stepleather@gmail.com">stepleather@gmail.com</a></p>
+        <a class="btn" href="mailto:stepleather@gmail.com">Send an email</a>
+      </div>
+      <div class="contact-card">
+        <h3>Visit Us</h3>
+        <p style="margin:8px 0">Step Leatherworks Limited<br>Seeta, Mukono<br>Uganda</p>
+        <a class="btn btn-dark" target="_blank" rel="noopener"
+           href="https://www.google.com/maps/search/?api=1&query=Seeta,+Mukono,+Uganda">Open in Google Maps</a>
+        <p style="margin-top:16px;font-size:.9rem;color:var(--muted)">Individuals are welcome to visit our store
+        and buy products directly. Groups and organizations — contact us to plan a workshop tour.</p>
+      </div>
+    </div>
+    <div class="contact-card">
+      <h3>Send an inquiry</h3>
+      <p style="color:var(--muted);font-size:.92rem">Fill in this form and it will open your email app,
+         addressed to us, ready to send.</p>
+      <form class="mail-form">
+        <label for="name">Your name</label>
+        <input id="name" name="name" required placeholder="e.g. Jane Atim">
+        <label for="email">Your email or phone</label>
+        <input id="email" name="email" required placeholder="How should we reply?">
+        <label for="topic">I'm interested in</label>
+        <select id="topic" name="topic">
+          <option>Buying products</option>
+          <option>Wholesale / bulk order</option>
+          <option>Formal training enrollment</option>
+          <option>Capacity building partnership</option>
+          <option>Something else</option>
+        </select>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required placeholder="Tell us what you need..."></textarea>
+        <button class="btn" type="submit" style="margin-top:18px">Send inquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>STEP LEATHERWORKS LIMITED</h4>
+        <p data-i18n="foot_tag">Quality leather shoes, bags, wallets and belts — made in Uganda, by skilled Ugandan hands.</p>
+        <p style="margin-top:12px;font-size:.85rem;color:#9b8468">Training · Capacity Building · Wholesale · Manufacturing</p>
+      </div>
+      <div>
+        <h4 data-i18n="f_links">Quick Links</h4>
+        <a href="products.html">Products</a>
+        <a href="wholesale.html">Wholesale</a>
+        <a href="training.html">Formal Training</a>
+        <a href="capacity.html">Capacity Building</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4 data-i18n="f_email">Email</h4>
+        <a href="mailto:stepleather@gmail.com">stepleather@gmail.com</a>
+        <h4 style="margin-top:16px" data-i18n="f_loc">Location</h4>
+        <span>Seeta, Mukono<br>Uganda</span>
+      </div>
+    </div>
+    <div class="footer-note">
+      <p>© 2026 Step Leatherworks Limited. All rights reserved.</p>
+      <p class="disc">Language note: Kiswahili and Luganda are live; Luo is a draft and Ateso is coming soon — all translations should be reviewed by native speakers before launch.</p>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
