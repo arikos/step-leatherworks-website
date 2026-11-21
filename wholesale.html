@@ -5,12 +5,119 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wholesale | Step Leatherworks Limited</title>
 <meta name="description" content="Wholesale leather shoes and sandals in bulk for schools, organizations and retailers — Step Leatherworks, Seeta Mukono, Uganda.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="%23d9a441"/><text x="32" y="43" font-size="34" font-family="Georgia" font-weight="bold" text-anchor="middle" fill="%232b1d14">S</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%23d9a441'/><text x='32' y='43' font-size='34' font-family='Georgia' font-weight='bold' text-anchor='middle' fill='%232b1d14'>S</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+<style>
+  /* Top Quick-Contact Bar */
+  .top-contact-bar {
+    background: #2b1d14;
+    color: #f5efe6;
+    font-size: 0.85rem;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(217, 164, 65, 0.25);
+  }
+  .top-contact-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .top-contact-links {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .top-contact-links a {
+    color: #f5efe6;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .top-contact-links a:hover {
+    color: #d9a441;
+  }
+  .wa-pill {
+    background: #25D366;
+    color: #111 !important;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700 !important;
+  }
+  .wa-pill:hover {
+    background: #1ebe5d;
+  }
+
+  /* WhatsApp Action Button */
+  .btn-whatsapp {
+    background: #25D366 !important;
+    color: #111 !important;
+    border-color: #25D366 !important;
+    font-weight: 700;
+  }
+  .btn-whatsapp:hover {
+    background: #1ebe5d !important;
+  }
+
+  /* CTA Action Row */
+  .cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+  }
+
+  /* Floating WhatsApp Button */
+  .floating-wa {
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    background: #25D366;
+    color: #111;
+    font-weight: 700;
+    font-size: 0.92rem;
+    padding: 12px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.28);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 999;
+    transition: transform 0.2s ease, background 0.2s ease;
+  }
+  .floating-wa:hover {
+    background: #1ebe5d;
+    transform: translateY(-2px);
+  }
+  @media (max-width: 600px) {
+    .top-contact-bar .loc-text { display: none; }
+    .floating-wa { bottom: 16px; right: 16px; padding: 10px 15px; font-size: 0.85rem; }
+  }
+</style>
 </head>
 <body>
+
+<!-- Top Quick Contact Bar -->
+<div class="top-contact-bar">
+  <div class="container">
+    <span class="loc-text">📍 Seeta - Mukono, Bukerere Rd (Opp. Shire Petro Station)</span>
+    <div class="top-contact-links">
+      <a href="tel:+256779972887">📞 0779 972 887</a>
+      <span>|</span>
+      <a href="tel:+256779381167">📞 0779 381 167</a>
+      <a class="wa-pill" href="https://wa.me/256779972887?text=Hello%20Step%20Leatherworks%20Limited,%20I%20would%20like%20to%20inquire%20about%20wholesale%20orders." target="_blank" rel="noopener">💬 WhatsApp Us</a>
+    </div>
+  </div>
+</div>
+
 <header class="site-header">
   <div class="container nav-wrap">
     <a class="brand" href="index.html">
@@ -37,13 +144,16 @@
   </div>
 </header>
 
-
 <section class="page-hero" style="background-image:url('assets/img/stock-shelves.jpg')">
   <div class="container">
     <p class="kicker">Bulk Supply</p>
     <h1>Wholesale</h1>
     <p>Reliable bulk supply of quality leather footwear for schools, organizations, retailers
        and businesses across Uganda. We keep stock ready — and we honor our delivery promises.</p>
+    <div class="hero-btns" style="margin-top:20px">
+      <a class="btn btn-whatsapp" href="https://wa.me/256779972887?text=Hello%20Step%20Leatherworks%20Limited,%20I%20would%20like%20to%20request%20a%20wholesale%20quotation." target="_blank" rel="noopener">💬 WhatsApp for Bulk Quote</a>
+      <a class="btn btn-ghost" href="tel:+256779972887">📞 Call 0779 972 887</a>
+    </div>
   </div>
 </section>
 
@@ -69,12 +179,13 @@
     <div><img class="img-round" src="assets/img/open-pile.jpg" alt="Leather sandals prepared in bulk"></div>
     <div>
       <p class="kicker">Who we serve</p>
-      <h2 class="section-title">Organizations we have supplied</h2>
+      <h2 class="section-title">Organizations &amp; schools we have supplied</h2>
       <ul class="checks">
-        <li>Vision for Africa International</li>
-        <li>Kamukama Foundation</li>
-        <li>St. Peters Nursery &amp; Primary School</li>
-        <li>St. Peters Secondary School</li>
+        <li>Vision for Africa Schools &amp; Vision for Africa International</li>
+        <li>St. Peter's Nursery, Primary &amp; Secondary Schools</li>
+        <li>Kamu Kamu Foundation</li>
+        <li>Pathways Development Initiative (PDI)</li>
+        <li>Psalms 23</li>
         <li>Churches, retailers and individual bulk buyers</li>
       </ul>
     </div>
@@ -87,7 +198,7 @@
     <h2 class="section-title">Simple, honest bulk ordering</h2>
     <div class="grid-3" style="margin-top:24px">
       <div class="card"><div class="card-body"><h3>1 · Tell us your needs</h3>
-        <p>Email us the product types, sizes, quantities and your delivery location.</p></div></div>
+        <p>WhatsApp, call, or email us the product types, sizes, quantities and your delivery location.</p></div></div>
       <div class="card"><div class="card-body"><h3>2 · We quote &amp; confirm</h3>
         <p>You receive a clear quotation and timeline. When we promise, we deliver.</p></div></div>
       <div class="card"><div class="card-body"><h3>3 · Production &amp; delivery</h3>
@@ -95,12 +206,16 @@
     </div>
     <div class="cta-banner" style="margin-top:36px">
       <h2>Request a wholesale quotation</h2>
-      <p>Minimum quantities and pricing are available on request.</p>
-      <a class="btn" href="contact.html">Contact us</a>
+      <p>Minimum quantities and bulk pricing are available on request. Reach our team directly:</p>
+      <div class="cta-actions">
+        <a class="btn btn-whatsapp" href="https://wa.me/256779972887?text=Hello%20Step%20Leatherworks,%20I%20would%20like%20to%20request%20a%20wholesale%20quotation." target="_blank" rel="noopener">💬 WhatsApp: 0779 972 887</a>
+        <a class="btn btn-whatsapp" href="https://wa.me/256779381167?text=Hello%20Step%20Leatherworks,%20I%20would%20like%20to%20request%20a%20wholesale%20quotation." target="_blank" rel="noopener">💬 WhatsApp: 0779 381 167</a>
+        <a class="btn" href="tel:+256779972887">📞 Call Now</a>
+        <a class="btn btn-ghost" href="contact.html">Contact Form</a>
+      </div>
     </div>
   </div>
 </section>
-
 
 <footer class="site-footer">
   <div class="container">
@@ -120,10 +235,13 @@
         <a href="contact.html">Contact</a>
       </div>
       <div>
-        <h4 data-i18n="f_email">Email</h4>
-        <a href="mailto:stepleather@gmail.com">stepleather@gmail.com</a>
+        <h4>Call / WhatsApp</h4>
+        <a href="https://wa.me/256779972887" target="_blank" rel="noopener">+256 779 972 887 (Call / WhatsApp)</a>
+        <a href="https://wa.me/256779381167" target="_blank" rel="noopener">+256 779 381 167 (Call / WhatsApp)</a>
+        <h4 style="margin-top:16px" data-i18n="f_email">Email</h4>
+        <a href="mailto:stepleatherworks@gmail.com">stepleatherworks@gmail.com</a>
         <h4 style="margin-top:16px" data-i18n="f_loc">Location</h4>
-        <span>Seeta, Mukono<br>Uganda</span>
+        <span>Seeta - Mukono, Bukerere Road<br>Opp. Shire Petro Station, Uganda</span>
       </div>
     </div>
     <div class="footer-note">
@@ -132,6 +250,13 @@
     </div>
   </div>
 </footer>
+
+<!-- Floating WhatsApp Button -->
+<a class="floating-wa" href="https://wa.me/256779972887?text=Hello%20Step%20Leatherworks%20Limited,%20I%20would%20like%20to%20inquire%20about%20wholesale%20supply." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+  <span>WhatsApp Us</span>
+</a>
+
 <script src="assets/js/main.js"></script>
 </body>
 </html>
